@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ჩემი ბიბლიოთეკა</title>
+<meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="mylibrary.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <script type="text/javascript" src="tsignebi.js"></script>
+ <script type="text/javascript" src="mylibrary.js"> </script>
+</head>
+<body>
+
+
+<header>
+  <h2>ჩემი ბიბლიოთეკა</h2>
+</header>
+
+<section>
+  
+  <article>
+    <h3 style="text-align:center;">ახალი წიგნის რეგისტრაცია</h3>
+	<form action="add_book.php">
+		<table border="0" align="center" class="upper">
+			<tr>
+			  <td>
+			    <input type="text" placeholder="დასახელება" id="dasaxeleba" name="dasaxeleba">
+			    <span style="color:red;">*</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+			    <input type="text" placeholder="ავტორი" id="avotor" name="avotor">
+			    <span style="color:red;">*</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+				<select name="Janri" id="Janri">
+					<option>ჟანრი</option>
+					<option>რომანი</option>
+					<option>კომედია</option>
+					<option>სათავგადასავლო</option>
+					<option>პოემა</option>
+					<option>ლიკრიკა</option>
+					<option>ისტორია</option>
+					<option>ჰორორი</option>
+				</select> <span style="color:red;">*</span>
+			  </td>
+			</tr>
+			<tr>
+			  <td><input type="text" placeholder="გამოცემის წელი" name="gamocemis_weli"></td>
+			</tr>
+			<tr>
+			  <td><input type="text" placeholder="გამომცემლობა" name="gamomcemloba"></td>
+			</tr>
+			<tr>
+			  <td><input type="text" placeholder="ფასი" name="fasi"></td>
+			</tr>
+			<tr>
+			  <td><input type="button" value="OK" onclick="add_book();"></td>
+			</tr>
+			
+		</table>
+		<p id="note" style="text-align:center;color:red;font-weight:bold;"></p>
+	</form>
+	
+     <h3 style="text-align:center;">საცავი</h3>
+	 <table border="1" align="center" class="central">
+		<tr class="centralcontent">
+			<th>რ.ნ</th>
+			<th>დასახელება</th>
+			<th>ავტორი</th>
+			<th>წელი</th>
+			<th>ჟანრი</th>
+			<th>გამომცემლობა</th>
+			<th>ფასი</th>
+		</tr>
+		<li id="booklist"></li>
+	 </table>
+	 <h3 style="text-align:center;">წიგნების საძიებო</h3>
+	 <table border="0" align="center" class="lower">
+			<tr>
+			  <td>
+			    <input type="text" placeholder="დასახელება" id="F_dasaxeleba" >
+			    
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+			    <input type="text" placeholder="ავტორი" id="F_avtori" >
+			    
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+				<select id="F_Janri">
+					<option>ჟანრი</option>
+					<option>რომანი</option>
+					<option>კომედია</option>
+					<option>სათავგადასავლო</option>
+					<option>პოემა</option>
+					<option>ლიკრიკა</option>
+					<option>ჰორორი</option>
+					<option>ისტორია</option>
+					<option>ფილოსოფია</option>
+				</select> 
+			  </td>
+			</tr>
+			<tr>
+			  <td><input type="text" id="F_weli" placeholder="გამოცემის წელი" ></td>
+			</tr>
+			<tr>
+			  <td><input type="text" id="F_gamomcemloba" placeholder="გამომცემლობა" ></td>
+			</tr>
+			<tr>
+			  <td><input type="text" id="F_fasi" placeholder="ფასი"></td>
+			</tr>
+			<tr>
+			  <td><input type="button" value="საძიებო" onclick="search_book();"></td>
+			</tr>
+		</table>
+		
+  </article>
+  
+</section>
+
+<footer>
+  <p>ყველა უფლება დაცულია 2020</p>
+</footer>
+
+</body>
+</html>

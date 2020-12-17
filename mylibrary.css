@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background: url('https://www.detroitlabs.com/wp-content/uploads/2018/02/alfons-morales-YLSwjSy7stw-unsplash.jpg') bottom center;
+  background-size: cover;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+#mySearch{
+	word-spacing: 5px;
+}
+
+.central{
+	border-width: 1.2rem;
+	border-style: double;
+	border-color:#0f0703;
+	background-color:rgba(236, 209, 111, 0.85);
+}
+.centralcontent{
+	background-color:rgb(185, 128, 85);
+
+}
+.upper{
+	border-color:#34170A;
+	background-color:rgba(255, 237, 222);
+}
+.lower{
+	border-color:#34170A;
+	background-color:rgba(255, 237, 222);
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table{
+  align-content: center;
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+tr{
+   background-color: rgba(232, 203, 141,0.85);
+  }
