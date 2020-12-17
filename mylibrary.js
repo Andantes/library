@@ -1,3 +1,4 @@
+var i=0;
 
 const bookList = document.getElementById('booklist');
 
@@ -5,6 +6,8 @@ let arBooks =[];
 
 const loadBooks = () =>{
 	try{
+		for(var j=0;j<Tsignebi.length;j++){
+			i++;}
 		arBooks = (Tsignebi);
 		console.log(Tsignebi)
 		displayBooks(arBooks);
@@ -19,14 +22,14 @@ const displayBooks = (books) =>{
 		.map((Tsigni)=>{
 			console.log(Tsigni)
 			return `
-			    <tr class="tsigni">+
-					<td align='right'> + (i + 1) +.</td> +
-					<td class='classname'> + Tsignebi[i].dasaxeleba +"</td> +
-					<td> + Tsignebi[i].avtori + </td> +
-					<td> + Tsignebi[i].weli + </td> +
-					<td> + Tsignebi[i].Janri + </td> +
-					<td> + Tsignebi[i].gamomcemloba + </td> +
-					<td> + Tsignebi[i].fasi + </td> +
+			    <tr class="tsigni">
+					<td align='right'>  (i + 1) .</td> 
+					<td class='classname'>  Tsignebi[i].dasaxeleba "</td> 
+					<td> ${Tsigni[i].avtori}</td> 
+					<td> Tsignebi[i].weli </td> 
+					<td> Tsignebi[i].Janri  </td> 
+					<td> Tsignebi[i].gamomcemloba  </td> 
+					<td> Tsignebi[i].fasi + </td> 
 				</tr>
 				   `;
 		})
